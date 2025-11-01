@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md. Fojailibne Nur Akhanda — Portfolio</title>
+<style>
+  /* ----------------- Reset / Base ----------------- */
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:sans-serif;
+    background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    color:#e0e0e0;
+    line-height:1.6;
+    min-height:100vh;
+  }
+  a{color:#7c3aed;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* ----------------- Container ----------------- */
+  .container{
+    max-width:1000px;
+    margin:2rem auto;
+    padding:0 1rem;
+  }
+  h1,h2,h3,h4{color:#fff;margin-bottom:.5rem;}
+  h2{margin-top:1.5rem;}
+  ul{list-style:disc inside;margin-top:.5rem;}
+  .btn{
+    display:inline-block;
+    padding:.5rem 1rem;
+    border-radius:8px;
+    background:#7c3aed;
+    color:#fff;
+    font-weight:bold;
+    margin-top:0.5rem;
+  }
+  .btn:hover{opacity:.85;cursor:pointer;}
+
+  /* ----------------- Header ----------------- */
+  header{
+    text-align:center;
+    margin-bottom:2rem;
+  }
+  header h1{font-size:2rem;}
+  header p{color:#c0c0ff;margin-top:.5rem;}
+
+  /* ----------------- Section Cards ----------------- */
+  section{margin-bottom:2rem;}
+  .card{
+    background:rgba(255,255,255,0.05);
+    padding:1rem 1.5rem;
+    border-radius:12px;
+    margin-top:1rem;
+    border:1px solid rgba(255,255,255,0.1);
+  }
+  .skills span{
+    display:inline-block;
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+    padding:5px 10px;
+    margin:3px;
+    border-radius:20px;
+    font-size:.9rem;
+  }
+
+  /* ----------------- Chatbot ----------------- */
+  .chat-toggle{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#7c3aed;
+    color:white;
+    padding:12px 16px;
+    border-radius:999px;
+    cursor:pointer;
+    z-index:999;
+    font-weight:bold;
+  }
+  .chatbox{
+    position:fixed;
+    bottom:80px;
+    right:20px;
+    width:350px;
+    max-height:400px;
+    background:rgba(10,8,30,0.95);
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.1);
+    z-index:999;
+  }
+  .chatbox.hidden{display:none;}
+  .chat-header{
+    padding:10px;
+    background:#302b63;
+    font-weight:bold;
+    color:#fff;
+  }
+  .messages{
+    flex:1;
+    overflow:auto;
+    padding:10px;
+  }
+  .msg{margin-bottom:10px;padding:8px 10px;border-radius:8px;font-size:.9rem;}
+  .msg.user{background:#444;color:#fff;text-align:right;}
+  .msg.ai{background:#7c3aed;color:#fff;}
+  .chat-input{display:flex;padding:5px;border-top:1px solid rgba(255,255,255,0.2);}
+  .chat-input input{
+    flex:1;
+    padding:6px 8px;
+    border-radius:6px;
+    border:none;
+    background:#222;
+    color:#fff;
+  }
+  .chat-input button{
+    background:#7c3aed;
+    border:none;
+    color:white;
+    padding:6px 10px;
+    margin-left:5px;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  /* ----------------- Responsive ----------------- */
+  @media(max-width:600px){
+    .chatbox{width:90%;right:5%;}
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Md. Fojailibne Nur Akhanda</h1>
+    <p>Machine Learning & AI Enthusiast — B.Sc. CSE (IUBAT)</p>
+    <p>📞 +8801709907172 · ✉️ <a href="mailto:mdfojaelakhonda@gmail.com">mdfojaelakhonda@gmail.com</a></p>
+  </header>
+
+  <!-- Career Objective -->
+  <section>
+    <h2>Career Objective</h2>
+    <div class="card">
+      <p>Enthusiastic and detail-oriented Computer Science Engineering student passionate about Machine Learning and AI. Seeking opportunities to apply programming, data analysis, and model development skills in real-world projects.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <ul>
+        <li><strong>IUBAT</strong> — B.Sc. in CSE (May 2022 – Apr 2026), CGPA: 3.6/4.0 (Expected)</li>
+        <li><strong>Ibrahim Khan Govt. College</strong> — HSC, GPA: 5.00</li>
+        <li><strong>Palshia Rani Dinamoni High School</strong> — SSC, GPA: 5.00</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>C</span><span>C++</span><span>C#</span><span>Java</span><span>Python</span>
+      <span>NumPy</span><span>Pandas</span><span>scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span>
+      <span>Git</span><span>Jupyter Notebook</span><span>VS Code</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <h4>Online Shopping Center</h4>
+      <p>Java-based shopping management system with user login, product management, and order tracking using JavaFX and MySQL.</p>
+      <a href="https://github.com/Fojael/Online-shopping-Center" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h4>Resume Screening System</h4>
+      <p>ML pipeline for automated CV parsing and ranking using NLP preprocessing and classification models (Python, scikit-learn, Streamlit).</p>
+    </div>
+    <div class="card">
+      <h4>Sign Language / Gesture Recognition</h4>
+      <p>Real-time hand gesture recognition using OpenCV and CNN models for classifying common hand signs. (Python, TensorFlow)</p>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section>
+    <h2>Achievements & Activities</h2>
+    <div class="card">
+      <ul>
+        <li>Volunteer — Fresher Orientation Program, IUBAT (2023)</li>
+        <li>Community volunteer — tech literacy workshops in Tangail</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:mdfojaelakhonda@gmail.com">mdfojaelakhonda@gmail.com</a></p>
+      <p>Phone: +8801709907172</p>
+      <p>Location: 4 Embankment Drive Road, Sector 10, Uttara, Dhaka-1230</p>
+      <p><a href="https://github.com/Fojael" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/md-fojailibne-nur-akhanda-8150ba38a/" target="_blank">LinkedIn</a></p>
+    </div>
+  </section>
+</div>
+
+<!-- Chatbot -->
+<div class="chat-toggle" id="chatToggle">Chat AI 🤖</div>
+<div class="chatbox hidden" id="chatbox">
+  <div class="chat-header">Fojailibne AI</div>
+  <div class="messages" id="messages"></div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Ask about projects, skills, or contact">
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+
+<script>
+  // Chat toggle
+ 
